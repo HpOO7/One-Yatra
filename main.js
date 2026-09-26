@@ -586,6 +586,20 @@ requestAnimationFrame(frame);
 var menu=$('menu'),tap=$('tap');
 if(tap)tap.addEventListener('click',function(){tap.setAttribute('aria-expanded',menu.classList.toggle('open'));});
 if(menu)menu.addEventListener('click',function(){menu.classList.remove('open');});
+document.querySelectorAll('.mitem>a').forEach(function(a){
+  var item=a.parentNode;
+  a.addEventListener('click',function(ev){
+    if(innerWidth>960){
+      ev.preventDefault();
+      var willOpen=!item.classList.contains('open');
+      document.querySelectorAll('.mitem.open').forEach(function(o){o.classList.remove('open');});
+      if(willOpen)item.classList.add('open');
+    }
+  });
+});
+document.addEventListener('click',function(ev){
+  document.querySelectorAll('.mitem.open').forEach(function(o){if(!o.contains(ev.target))o.classList.remove('open');});
+});
 var sheet=$('sheet'),sheetFrame=$('sheetFrame');
 var YT_MAIN='6krL6HRxBj0';
 function openSheet(id){if(sheetFrame)sheetFrame.src='https://www.youtube.com/embed/'+(id||YT_MAIN)+'?autoplay=1&mute=1&rel=0';if(sheet)sheet.classList.add('open');}
