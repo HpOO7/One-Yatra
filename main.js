@@ -28,9 +28,10 @@ var MEDIA={
   onlineNumerology:{src:'media/online-numerology.jpg',kind:'photo'},
   retreatMain:{src:'media/retreat-main.jpg',kind:'photo'},
   retreatHimalaya:{src:'media/retreat-himalaya.jpg',kind:'photo'},
-  rooms1:{src:'media/rooms-1.jpg',kind:'photo'},
-  rooms2:{src:'media/rooms-3b.jpg',kind:'photo'},
-  rooms3:{src:'media/rooms-2b.jpg',kind:'photo'},
+  rooms1:{src:'media/room-teal-bed.jpg',kind:'photo',alt:'A guest room at Ekam Journey'},
+  rooms2:{src:'media/balcony-river.jpg',kind:'photo',alt:'The Dhauli Ganga, seen from the room balcony'},
+  balconyRiver:{src:'media/balcony-river.jpg',kind:'photo',alt:'The Dhauli Ganga, seen from the room balcony'},
+  rooms3:{src:'media/room-balcony-view.jpg',kind:'photo',alt:'The riverside balcony corridor'},
   g0:{src:'media/gallery-1.jpg',kind:'photo'},
   g1:{src:'media/gallery-2.jpg',kind:'photo'},
   g2:{src:'media/gallery-3.jpg',kind:'photo'},
@@ -39,32 +40,37 @@ var MEDIA={
   g5:{src:'media/gallery-6.jpg',kind:'photo'},
   g6:{src:'media/gallery-7.jpg',kind:'photo'},
   g7:{src:'media/gallery-8.jpg',kind:'photo'},
+  g8:{src:'media/ekam-building.jpg',kind:'photo',alt:'The Ekam Journey centre in Rishikesh'},
+  g9:{src:'media/team-group.jpg',kind:'photo',alt:'The Ekam Journey team and community'},
+  g10:{src:'media/river-rapids.jpg',kind:'photo',alt:'The river running through Ekam Journey'},
   v0:{src:'',kind:'photo',spec:'300 × 300'},v1:{src:'',kind:'photo',spec:'300 × 300'},v2:{src:'',kind:'photo',spec:'300 × 300'},
   vol0:{src:'media/vol-bruno.jpg',kind:'photo'},vol1:{src:'media/vol-ashish.jpg',kind:'photo'},vol2:{src:'media/vol-juliana.jpg',kind:'photo'},
-  taoFlow:{src:'',kind:'photo',spec:'900 × 700',note:'Tao Flow Awakening — photo coming soon'},
+  taoFlow:{src:'media/healing-room.jpg',kind:'photo',alt:'A healing space at Ekam Journey'},
   massage:{src:'',kind:'photo',spec:'900 × 700',note:'Massage therapies — photo coming soon'},
-  kundaliniMassage:{src:'',kind:'photo',spec:'900 × 700',note:'Kundalini Massage — photo coming soon'},
-  deepTissueMassage:{src:'',kind:'photo',spec:'900 × 700',note:'Deep Tissue Massage — photo coming soon'},
-  hotStoneMassage:{src:'',kind:'photo',spec:'900 × 700',note:'Hot Himalayan Salt Stones Massage — photo coming soon'},
+  kundaliniMassage:{src:'media/massage-room.jpg',kind:'photo',alt:'A massage & therapy room at Ekam Journey'},
+  deepTissueMassage:{src:'media/massage-room.jpg',kind:'photo',alt:'A massage & therapy room at Ekam Journey'},
+  hotStoneMassage:{src:'media/massage-room.jpg',kind:'photo',alt:'A massage & therapy room at Ekam Journey'},
   trameTherapy:{src:'',kind:'photo',spec:'900 × 700',note:'Trame Therapy — photo coming soon'},
   transform13D:{src:'',kind:'photo',spec:'900 × 700',note:'13D Multi-Dimensional Transformation — photo coming soon'},
-  shiatsu:{src:'',kind:'photo',spec:'900 × 700',note:'Shiatsu — photo coming soon'},
+  shiatsu:{src:'media/massage-room.jpg',kind:'photo',alt:'A massage & therapy room at Ekam Journey'},
   crystalTherapy:{src:'',kind:'photo',spec:'900 × 700',note:'Crystal Therapy — photo coming soon'},
   soundHealing:{src:'',kind:'photo',spec:'900 × 700',note:'Energetic Sound Healing — photo coming soon'},
-  ekamRituals:{src:'',kind:'photo',spec:'900 × 700',note:'Ekam Journey Healing Rituals — photo coming soon'},
-  pinealSound:{src:'',kind:'photo',spec:'900 × 700',note:'Pineal Gland Activation by Sounds — photo coming soon'}
+  ekamRituals:{src:'media/massage-room.jpg',kind:'photo',alt:'A massage & therapy room at Ekam Journey'},
+  pinealSound:{src:'media/healing-room.jpg',kind:'photo',alt:'A healing space at Ekam Journey'},
+  naadYoga:{src:'media/healing-room.jpg',kind:'photo',alt:'A healing space at Ekam Journey'},
+  breathworkSession:{src:'media/breathwork-session.jpg',kind:'photo',alt:'A guided breathwork session at Ekam Journey'},
+  transform13DCourse:{src:'',kind:'photo',spec:'900 × 700',note:'13D Energy Healing course — photo coming soon'},
+  ekamBuilding:{src:'media/ekam-building.jpg',kind:'photo',alt:'The Ekam Journey centre in Rishikesh'},
+  teamGroup:{src:'media/team-group.jpg',kind:'photo',alt:'The Ekam Journey team and community'},
+  waterfallLounge:{src:'media/nature-waterfall-lounge.jpg',kind:'photo',alt:'A quiet lounge by the waterfall'},
+  riverRapids:{src:'media/river-rapids.jpg',kind:'photo',alt:'The river running through Ekam Journey'},
+  yogaStudio:{src:'media/yoga-studio-small.jpg',kind:'photo',alt:'The yoga studio at Ekam Journey'},
+  activitySignpost:{src:'media/activity-signpost.jpg',kind:'photo',alt:'A signpost pointing the way to each practice'},
+  riverMountains:{src:'media/river-mountains-small.jpg',kind:'photo',alt:'The river winding through the Himalayan foothills'}
 };
 
 /* ───── teacher training certificate ───── */
 var PILLARS=[
- {n:'Ekam Kriya Meditation',deva:'ध्यान',m:'ttcKriya',v:'lZYe0ZULLH8',
-  d:'Kriya is inner alchemy. This training opens the path to self-mastery through ancient Himalayan techniques designed to purify energy, expand consciousness, and reveal the quiet power within.',
-  w:[['Format','In-person, Rishikesh'],['Focus','Self-mastery & presence']],
-  g:'<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
-   +'<g class="sway"><circle cx="60" cy="34" r="10" fill="#E8B537" stroke="#8E3323"/>'
-   +'<path d="M60 44 v22M60 54 L38 46M60 54 l22-8" stroke="#8E3323"/>'
-   +'<path d="M60 66 q-24 4-30 26 q30 12 60 0 q-6-22-30-26z"/></g>'},
-
  {n:'Breathwork',deva:'श्वास',m:'ttcBreathwork',
   d:'Our Breathwork TTC weaves Himalayan wisdom with modern technique to help you access healing, clarity and inner strength — and guide others through conscious, heart-centered breath.',
   w:[['Duration','6 days · 30 hours'],['Focus','Conscious, heart-centered breath']],
@@ -72,6 +78,14 @@ var PILLARS=[
    +'<g class="sway"><circle cx="60" cy="60" r="13" fill="#CF9412" stroke="#8E3323"/>'
    +'<circle cx="60" cy="60" r="26"/><circle cx="60" cy="60" r="38" opacity=".6" stroke-dasharray="3 6"/>'
    +'<path d="M60 12 v10M60 98 v10M12 60 h10M98 60 h10" stroke="#8E3323"/></g>'},
+
+ {n:'Ekam Kriya Meditation',deva:'ध्यान',m:'ttcKriya',v:'lZYe0ZULLH8',
+  d:'Kriya is inner alchemy. This training opens the path to self-mastery through ancient Himalayan techniques designed to purify energy, expand consciousness, and reveal the quiet power within.',
+  w:[['Format','In-person, Rishikesh'],['Focus','Self-mastery & presence']],
+  g:'<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
+   +'<g class="sway"><circle cx="60" cy="34" r="10" fill="#E8B537" stroke="#8E3323"/>'
+   +'<path d="M60 44 v22M60 54 L38 46M60 54 l22-8" stroke="#8E3323"/>'
+   +'<path d="M60 66 q-24 4-30 26 q30 12 60 0 q-6-22-30-26z"/></g>'},
 
  {n:'Pranayama',deva:'प्राणायाम',m:'ttcPranayama',
   d:'Rooted in ancient yogic lineages, this Pranayama TTC invites you to explore the depth of your inner energy through traditional technique and mindful practice.',
@@ -131,8 +145,8 @@ var G_EYE='<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
  +'<g class="sway"><path d="M22 60 Q60 30 98 60 Q60 90 22 60Z" fill="none" stroke="#8E3323"/>'
  +'<circle cx="60" cy="60" r="12" fill="#CF9412" stroke="#8E3323"/><circle cx="60" cy="60" r="4" fill="#8E3323" stroke="none"/></g>';
 
-/* training courses — become a practitioner */
-var HOLISTIC_TRAINING=[
+/* training courses — become a practitioner (Teacher Training page, own section) */
+var TRAINING_COURSES=[
  {n:'Kundalini Massage',deva:'',m:'kundaliniMassage',g:G_MASSAGE,
   d:'Learn and practice this ancient Ayurvedic care — a unique way to give a massage, working with sesame oil, ghee, essential oils and bija mantras.',
   w:[['Duration','10 hours'],['Format','In-person, Rishikesh']]},
@@ -141,17 +155,26 @@ var HOLISTIC_TRAINING=[
   w:[['Duration','30 hours'],['Format','In-person, Rishikesh']]},
  {n:'Tarot Card Reading',deva:'टैरो',m:'ttcTarot',g:G_TAROT,
   d:'Learn and awaken your consciousness about archetypes, enhance your intuitive power, and connect and develop new skills.',
-  w:[['Duration','6 hours'],['Format','In-person, Rishikesh']]}
+  w:[['Duration','6 hours'],['Format','In-person, Rishikesh']]},
+ {n:'Naad Yoga',deva:'नाद योग',m:'naadYoga',g:G_SOUND,
+  d:'The yoga of sound & vibration — mantra, voice, breath and sacred frequencies to harmonize body, mind and soul, and activate the chakras.',
+  w:[['Format','In-person, Rishikesh'],['Teacher','Franck Ji']]},
+ {n:'13D Energy Healing',deva:'',m:'transform13DCourse',g:G_RAYS,
+  d:'The powerful tool of the New Earth. Wake up your inner healing skills, receive 22 initiations, connect with your I AM presence, cleanse your DNA and chakras, and learn to live free from fear and co-create with the Source — and much more. Taught by Franck Ji, Healer & Holistic Therapist.',
+  w:[['Duration','5 days · 30 hours'],['Teacher','Franck Ji']]},
+ {n:'Pineal Gland Activation',deva:'',m:'pinealSound',g:G_EYE,
+  d:'A sound-based activation practice aiming to connect you with your I AM Presence — deep mental calm, clearing unconscious conditioning, and greater clarity and intuition.',
+  w:[['Format','In-person, Rishikesh'],['Teacher','Franck Ji']]}
 ];
 
 /* packages — relax & rejuvenate */
 var HOLISTIC_PACKAGES=[
  {n:'Tao Flow Awakening',deva:'',m:'taoFlow',g:G_LOTUS,
   d:'Uplift your vibration, free yourself and radiate love. Discover your true self and spread your new wings — each day, select and receive a therapy of your choice for a super holistic experience.',
-  w:[['Format','7 encounters × 90 min'],['Where','In-person, Rishikesh']]},
+  w:[['Format','7 encounters × 90 min'],['Price','On request']]},
  {n:'Ekam Journey Healing Rituals',deva:'',m:'ekamRituals',g:G_MASSAGE,
   d:'Pamper yourself with this Ekam Special — a combination of two treatments designed to bring you maximum relaxation and rejuvenation: Kundalini Massage + Shiatsu, or Deep Tissue Massage + Shiatsu.',
-  w:[['Duration','3 hours'],['Format','In-person, Rishikesh']]}
+  w:[['Duration','3 hours'],['Price','On request']]}
 ];
 
 /* à la carte healing sessions — all 90 min · ₹3,000 */
@@ -232,7 +255,7 @@ var VOLVOICES=[
  ['A beautiful blend of creativity, learning and community — painting and design work, assisting in yoga classes and retreat activities, and a deep sense of connection and fulfillment.','Juliana','Volunteer','vol2']
 ];
 
-var GAL=[['g0',210,270],['g1',330,230],['g2',210,210],['g3',200,280],['g4',330,235],['g5',320,220],['g6',210,210],['g7',200,275]];
+var GAL=[['g0',210,270],['g1',330,230],['g2',210,210],['g3',200,280],['g4',330,235],['g5',320,220],['g6',210,210],['g7',200,275],['g8',330,230],['g9',210,270],['g10',200,280]];
 
 /* running gallery on the home page — same photographs, a few carrying a caption */
 var GAL_HOME=[
@@ -243,7 +266,10 @@ var GAL_HOME=[
  {m:'g4',cap:'An evening of kirtan and live music'},
  {m:'g5'},
  {m:'g6'},
- {m:'g7',cap:'A havan under the stars'}
+ {m:'g7',cap:'A havan under the stars'},
+ {m:'g8',cap:'The Ekam Journey centre in Rishikesh'},
+ {m:'g9',cap:'Our teachers and community, together'},
+ {m:'g10',cap:'The river that runs through it all'}
 ];
 
 /* social activities — community life around Ekam Journey */
@@ -255,7 +281,12 @@ var SOCIAL=[
  {t:'An Evening of Kirtan',m:'g4',d:'Live music and call-and-response chanting as the sun goes down — one of our favourite ways to gather.'},
  {t:'Welcoming a Retreat',m:'g5',d:'Teachers from India and beyond opening a retreat together, with flowers, prayer and shared intention.'},
  {t:'Circle Meditation',m:'g6',d:'Sitting together, outdoors, in silence — one of the simplest and most powerful things we do as a community.'},
- {t:'Fire Ceremony',m:'g7',d:'A havan under the stars — an ancient ritual that still gathers us, exactly as it always has.'}
+ {t:'Fire Ceremony',m:'g7',d:'A havan under the stars — an ancient ritual that still gathers us, exactly as it always has.'},
+ {t:'Group Breathwork',m:'breathworkSession',d:'Lying down together for a guided breathwork session — one of the quiet, powerful moments in every retreat.'},
+ {t:'A Quiet Moment by the Water',m:'waterfallLounge',d:'Between sessions, a bench by the waterfall — one of the small ways this place asks you to slow down.'},
+ {t:'Morning in the Studio',m:'yogaStudio',d:'Mats out, doors open to the trees — the studio before a session begins.'},
+ {t:'Which Path Today?',m:'activitySignpost',d:'Breathwork, healing, meditation, yoga, retreats, stay — a little signpost that says it all.'},
+ {t:'The Valley Below',m:'riverMountains',d:'The river winding through the Himalayan foothills — the view worth the walk.'}
 ];
 
 /* home overview tiles — one per thing Ekam Journey does, linking out to its page */
@@ -264,10 +295,10 @@ var HOMETILES=[
  {tag:'Programs',t:'Drop-In Classes',d:'No commitment — join a session whenever your schedule allows.',m:'dropinBreathwork',href:'drop-in.html'},
  {tag:'Programs',t:'Online Sessions',d:'Meditation, breathwork and guidance you can join from anywhere.',m:'onlineKriya',href:'online.html'},
  {tag:'Practice',t:'Himalayan Breath',d:'Traditional pranayama and breathwork, rooted in the wisdom of the mountains.',m:'ttcPranayama',href:'himalayan-breath.html'},
- {tag:'New',t:'Holistic Healing Sanctuary',d:'Tao Flow Awakening, training courses and a full menu of massage and energy therapies.',m:'ttcHealing',href:'holistic-healing.html'},
+ {tag:'New',t:'Holistic Healing Sanctuary',d:'Tao Flow Awakening, training courses and a full menu of massage and energy therapies.',m:'kundaliniMassage',href:'holistic-healing.html'},
  {tag:'Guidance',t:'Tarot & Numerology',d:'Structured, honest readings — a vocabulary for what you already sense.',m:'ttcTarot',href:'guidance.html'},
  {tag:'Journey',t:'Spiritual Retreat',d:'A sacred week by the Dhauli Ganga, or a walk into the Himalayas.',m:'retreatMain',href:'retreat.html'},
- {tag:'Stay',t:'Stays in Nature',d:'Riverside rooms, satvik food, and the sound of the Dhauli Ganga outside your window.',m:'rooms1',href:'stays-in-nature.html'}
+ {tag:'Stay',t:'Stays in Nature',d:'Riverside rooms, satvik food, and the sound of the Dhauli Ganga outside your window.',m:'balconyRiver',href:'stays-in-nature.html',featured:true}
 ];
 
 /* ───── placeholder art ───── */
@@ -313,7 +344,7 @@ function watchLink(id){
   return id?'<button class="tl watch" data-open-film="'+id+'">▶ Watch video</button>':'';
 }
 function glyphSvg(g){
-  return '<svg viewBox="0 0 120 120" fill="none" stroke="#233A5B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+g+'</svg>';
+  return '<svg viewBox="0 0 120 120" fill="none" stroke="#5F7A4C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+g+'</svg>';
 }
 function pillarCard(p){
   var hasPhoto=!!(MEDIA[p.m]&&MEDIA[p.m].src);
@@ -341,7 +372,7 @@ if($('values')) $('values').innerHTML=VALUES.map(function(v){
 }).join('');
 
 if($('paths-grid')) $('paths-grid').innerHTML=PILLARS.map(pillarCard).join('');
-if($('holistic-training-grid')) $('holistic-training-grid').innerHTML=HOLISTIC_TRAINING.map(pillarCard).join('');
+if($('training-courses-grid')) $('training-courses-grid').innerHTML=TRAINING_COURSES.map(pillarCard).join('');
 if($('holistic-packages-grid')) $('holistic-packages-grid').innerHTML=HOLISTIC_PACKAGES.map(pillarCard).join('');
 if($('holistic-alacarte-grid')) $('holistic-alacarte-grid').innerHTML=HOLISTIC_ALACARTE.map(pillarCard).join('');
 if($('dropin-grid')) $('dropin-grid').innerHTML=DROPIN.map(courseCard).join('');
@@ -589,3 +620,40 @@ if(feedbackForm)feedbackForm.addEventListener('submit',function(ev){
   feedbackForm.reset();
   if($('fbThanks'))$('fbThanks').hidden=false;
 });
+
+/* create your own retreat — composes the brief and sends it straight to WhatsApp */
+var retreatForm=$('retreatBuilderForm');
+if(retreatForm)retreatForm.addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var name=($('rbName')&&rbName.value.trim())||'';
+  var dates=($('rbDates')&&rbDates.value.trim())||'';
+  var size=($('rbSize')&&rbSize.value.trim())||'';
+  var focus=($('rbFocus')&&rbFocus.value.trim())||'';
+  var notes=($('rbNotes')&&rbNotes.value.trim())||'';
+  var lines=["Hi, I'd like to create my own retreat."];
+  if(name)lines.push('Name: '+name);
+  if(dates)lines.push('Preferred dates: '+dates);
+  if(size)lines.push('Group size: '+size);
+  if(focus)lines.push('Focus / theme: '+focus);
+  if(notes)lines.push('Notes: '+notes);
+  window.open(waLink(lines.join('\n')),'_blank','noopener');
+  retreatForm.reset();
+  if($('rbThanks'))$('rbThanks').hidden=false;
+});
+
+/* subnav scroll-spy — highlights the pill for the section currently in view */
+(function(){
+  var subnavLinks=[].slice.call(document.querySelectorAll('.subnav a[href^="#"]'));
+  if(!subnavLinks.length)return;
+  var sections=subnavLinks.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+  if(!sections.length)return;
+  function onScroll(){
+    var y=window.scrollY+140,current=null;
+    sections.forEach(function(s){if(s.offsetTop<=y)current=s;});
+    subnavLinks.forEach(function(a){
+      a.classList.toggle('active',!!current&&a.getAttribute('href')==='#'+current.id);
+    });
+  }
+  addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
