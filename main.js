@@ -344,7 +344,7 @@ function watchLink(id){
   return id?'<button class="tl watch" data-open-film="'+id+'">▶ Watch video</button>':'';
 }
 function glyphSvg(g){
-  return '<svg viewBox="0 0 120 120" fill="none" stroke="#5F7A4C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+g+'</svg>';
+  return '<svg viewBox="0 0 120 120" fill="none" stroke="#1C2712" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+g+'</svg>';
 }
 function pillarCard(p){
   var hasPhoto=!!(MEDIA[p.m]&&MEDIA[p.m].src);
