@@ -12,6 +12,26 @@ var MEDIA={
   founderArjun:{src:'media/founder-arjun.jpg',kind:'photo'},
   founderFranck:{src:'media/founder-franck.jpg',kind:'photo'},
   ttcKriya:{src:'media/ttc-kriya.jpg',kind:'photo'},
+  bwHero:{src:'media/breathwork-hero.jpg',kind:'photo',alt:'Group namaste at Ekam Journey'},
+  bwAbout:{src:'media/breathwork-about.jpg',kind:'photo',alt:'A breathwork session in the shala'},
+  bwUniqRiver:{src:'media/breathwork-uniq-river.jpg',kind:'photo',alt:'Arjun Ji meditating by the Himalayan river'},
+  bwUniqMonk:{src:'media/breathwork-uniq-monk.jpg',kind:'photo',alt:'Arjun Ji with a Himalayan monk'},
+  bwLevel1Group:{src:'media/breathwork-level1-group.jpg',kind:'photo',alt:'Level 1 group practice'},
+  bwLevel1Pranayama:{src:'media/breathwork-level1-pranayama.jpg',kind:'photo',alt:'Alternate nostril pranayama practice'},
+  bwYogaClass:{src:'media/breathwork-yoga-class.jpg',kind:'photo',alt:'Yoga class at Ekam Journey'},
+  bwPranayamaClass:{src:'media/breathwork-pranayama-class.jpg',kind:'photo',alt:'Pranayama class'},
+  bwLevel2Group:{src:'media/breathwork-level2-group.jpg',kind:'photo',alt:'Level 2 group breathwork journey'},
+  bwLevel2Holding:{src:'media/breathwork-level2-holding.jpg',kind:'photo',alt:'Holding space in a Level 2 session'},
+  bwStayCommunity:{src:'media/breathwork-stay-community.jpg',kind:'photo',alt:'Community group in the mountains'},
+  bwStayMeals:{src:'media/breathwork-stay-meals.jpg',kind:'photo',alt:'Sattvik homemade meals'},
+  bwStayNature:{src:'media/breathwork-stay-nature.jpg',kind:'photo',alt:'Natural surroundings at Ekam Journey'},
+  bwLifetime:{src:'media/breathwork-lifetime-session.jpg',kind:'photo',alt:'A guided group session'},
+  bwCertification:{src:'media/breathwork-certification.jpg',kind:'photo',alt:'Graduates with their certificates'},
+  bwArjunPortrait:{src:'media/breathwork-arjun-portrait.jpg',kind:'photo',alt:'Arjun Ji portrait'},
+  bwTestimonialJacob:{src:'media/breathwork-testimonial-jacob.jpg',kind:'photo',alt:'Jacob'},
+  bwTestimonialNadjaa:{src:'media/breathwork-testimonial-nadjaa.jpg',kind:'photo',alt:'Nadjaa'},
+  bwTestimonialCharlotte:{src:'media/breathwork-testimonial-charlotte.jpg',kind:'photo',alt:'Charlotte'},
+  bwCta:{src:'media/breathwork-cta.jpg',kind:'photo',alt:'Celebrating graduates at Ekam Journey'},
   ttcBreathwork:{src:'media/ttc-breathwork.webp',kind:'photo'},
   ttcPranayama:{src:'media/ttc-pranayama.jpg',kind:'photo'},
   ttcTarot:{src:'media/ttc-tarot.jpg',kind:'photo'},
@@ -71,15 +91,15 @@ var MEDIA={
 
 /* ───── teacher training certificate ───── */
 var PILLARS=[
- {n:'Breathwork',deva:'श्वास',m:'ttcBreathwork',
+ {n:'Breathwork',deva:'श्वास',m:'ttcBreathwork',page:'breathwork-teacher-training.html',
   d:'Our Breathwork TTC weaves Himalayan wisdom with modern technique to help you access healing, clarity and inner strength — and guide others through conscious, heart-centered breath.',
-  w:[['Duration','6 days · 30 hours'],['Focus','Conscious, heart-centered breath']],
+  w:[['Duration','45 hours · Level 1 + 2'],['Focus','Conscious, heart-centered breath']],
   g:'<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
    +'<g class="sway"><circle cx="60" cy="60" r="13" fill="#CF9412" stroke="#8E3323"/>'
    +'<circle cx="60" cy="60" r="26"/><circle cx="60" cy="60" r="38" opacity=".6" stroke-dasharray="3 6"/>'
    +'<path d="M60 12 v10M60 98 v10M12 60 h10M98 60 h10" stroke="#8E3323"/></g>'},
 
- {n:'Ekam Kriya Meditation',deva:'ध्यान',m:'ttcKriya',v:'lZYe0ZULLH8',
+ {n:'Ekam Kriya Meditation',deva:'ध्यान',m:'ttcKriya',v:'lZYe0ZULLH8',page:'ekam-kriya-meditation.html',
   d:'Kriya is inner alchemy. This training opens the path to self-mastery through ancient Himalayan techniques designed to purify energy, expand consciousness, and reveal the quiet power within.',
   w:[['Format','In-person, Rishikesh'],['Focus','Self-mastery & presence']],
   g:'<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
@@ -94,7 +114,7 @@ var PILLARS=[
    +'<g class="sway"><path d="M20 60 q10-18 20 0 t20 0 t20 0 t20 0" stroke="#8E3323"/>'
    +'<circle cx="60" cy="60" r="8" fill="#CF9412" stroke="#8E3323"/></g>'},
 
- {n:'Tarot Reading',deva:'टैरो',m:'ttcTarot',
+ {n:'Tarot Reading',deva:'टैरो',m:'ttcTarot',page:'guidance.html#tarot-training',
   d:'A space for clarity and truth. Through intuitive tarot guidance, you will connect with the messages your soul is ready to receive, illuminating your path with insight and gentle wisdom.',
   w:[['Format','In-person, Rishikesh'],['Focus','Intuitive guidance']],
   g:'<circle cx="60" cy="60" r="56" fill="#E8E1CE" stroke="#8E3323"/>'
@@ -294,7 +314,7 @@ var HOMETILES=[
  {tag:'Programs',t:'Teacher Training Certificate',d:'Five trainings rooted in Himalayan lineage — become a teacher, not just a practitioner.',m:'ttcKriya',href:'teacher-training.html',featured:true},
  {tag:'Programs',t:'Drop-In Classes',d:'No commitment — join a session whenever your schedule allows.',m:'dropinBreathwork',href:'drop-in.html'},
  {tag:'Programs',t:'Online Sessions',d:'Meditation, breathwork and guidance you can join from anywhere.',m:'onlineKriya',href:'online.html'},
- {tag:'Practice',t:'Himalayan Breath',d:'Traditional pranayama and breathwork, rooted in the wisdom of the mountains.',m:'ttcPranayama',href:'himalayan-breath.html'},
+ {tag:'Practice',t:'Breathwork Teacher Training',d:'Traditional pranayama and breathwork, rooted in the wisdom of the mountains — become certified to teach it.',m:'ttcPranayama',href:'breathwork-teacher-training.html'},
  {tag:'New',t:'Holistic Healing Sanctuary',d:'Tao Flow Awakening, training courses and a full menu of massage and energy therapies.',m:'kundaliniMassage',href:'holistic-healing.html'},
  {tag:'Guidance',t:'Tarot & Numerology',d:'Structured, honest readings — a vocabulary for what you already sense.',m:'ttcTarot',href:'guidance.html'},
  {tag:'Journey',t:'Spiritual Retreat',d:'A sacred week by the Dhauli Ganga, or a walk into the Himalayas.',m:'retreatMain',href:'retreat.html'},
@@ -355,7 +375,8 @@ function pillarCard(p){
    +smallPlate
    +'<div class="body">'+(p.deva?'<span class="deva">'+p.deva+'</span>':'')+'<h3>'+p.n+'</h3><p>'+p.d+'</p>'
    +'<ul>'+p.w.map(function(w){return '<li><span>'+w[0]+'</span><em>'+w[1]+'</em></li>';}).join('')
-   +'</ul><div class="cta-row">'+applyBtn(p.n)+watchLink(p.v)+'</div></div></article>';
+   +'</ul>'+(p.page?'<a href="'+p.page+'" class="card-link" style="display:block;margin-top:1rem">Course details →</a>':'')
+   +'<div class="cta-row">'+applyBtn(p.n)+watchLink(p.v)+'</div></div></article>';
 }
 function courseCard(c){
   return '<article class="course"><div class="slot" data-media="'+c.m+'"></div><div class="body">'
@@ -657,7 +678,7 @@ if(retreatForm)retreatForm.addEventListener('submit',function(ev){
 
 /* subnav scroll-spy — highlights the pill for the section currently in view */
 (function(){
-  var subnavLinks=[].slice.call(document.querySelectorAll('.subnav a[href^="#"]'));
+  var subnavLinks=[].slice.call(document.querySelectorAll('.subnav a[href^="#"],.course-sidebar a[href^="#"]'));
   if(!subnavLinks.length)return;
   var sections=subnavLinks.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
   if(!sections.length)return;

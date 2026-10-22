@@ -89,7 +89,7 @@ p{max-width:60ch}
 
 /* ── header ── */
 header{position:fixed;inset:0 0 auto;z-index:130;transition:.5s var(--ez)}
-header.set{background:rgba(57, 78, 38, 0.93);backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(27,38,32,.1)}
+header.set{background:rgba(57,78,38,.93);backdrop-filter:blur(10px);box-shadow:0 8px 24px rgba(27,38,32,.14)}
 .hrow{display:flex;align-items:center;gap:1.7rem;padding:.95rem 0}
 .logo{display:flex;align-items:center;transition:.45s}
 .logo-img{height:58px;width:auto;display:block}
@@ -105,6 +105,7 @@ menu a:hover::after{right:0}
 .btn.lite.hcta:hover{background:var(--ink);color:var(--khadi)}
 .photo-hero .btn.lite.hcta{color:var(--khadi);box-shadow:inset 0 0 0 1.5px rgba(232,225,206,.5)}
 .set .btn.lite.hcta{color:var(--khadi);box-shadow:inset 0 0 0 1.5px rgba(232,225,206,.6)}
+.set .btn.lite.hcta:hover{background:var(--khadi);color:var(--ink)}
 .tap{display:none;margin-left:auto;width:42px;height:42px;color:var(--ink)}
 .photo-hero .tap{color:var(--khadi)}
 .set .tap{color:var(--khadi)}
@@ -179,7 +180,7 @@ body.tone .slot.has::after{content:"";position:absolute;inset:0;pointer-events:n
   background:linear-gradient(180deg,rgba(20,28,24,.5),rgba(20,28,24,.08) 34%,rgba(20,28,24,.8))}
 .hero.short .heroscene .scrim{background:linear-gradient(180deg,rgba(20,28,24,.45),rgba(20,28,24,.55))}
 .hero .cap{position:absolute;left:0;right:0;bottom:0;z-index:30;padding-bottom:3.2rem;pointer-events:none}
-.hero.short .cap{top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-bottom:0}
+.hero.short .cap{top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-bottom:0;padding-top:90px}
 .hero .cap>*{pointer-events:auto}
 .hero h1{color:var(--khadi);max-width:16ch;text-shadow:0 2px 34px rgba(20,28,24,.4)}
 .hero.short h1{font-size:clamp(2.4rem,6vw,4.6rem)}
@@ -410,13 +411,115 @@ body.tone .slot.has::after{content:"";position:absolute;inset:0;pointer-events:n
 
 /* ── social activities ── */
 .social-grid{display:flex;flex-wrap:wrap;gap:2.2rem}
-.scard{flex:1 1 320px;max-width:400px;background:var(--khadi);border-radius:8px;overflow:hidden;
+.scard{flex:1 1 320px;max-width:410px;background:var(--khadi);border-radius:8px;overflow:hidden;
   box-shadow:0 2px 10px rgba(27,38,32,.09);transition:box-shadow .5s var(--ez),transform .5s var(--ez)}
 .scard:hover{box-shadow:0 26px 46px rgba(27,38,32,.2);transform:translateY(-6px)}
-.scard .slot{height:230px;border-radius:8px 8px 0 0}
+.scard .slot{height:260px;border-radius:8px 8px 0 0}
 .scard .body{padding:1.5rem 1.6rem 1.8rem}
 .scard h3{font-size:1.25rem;margin-bottom:.6rem}
 .scard p{font-size:.98rem;color:var(--ink-soft)}
+.scard .card-link{display:inline-block;margin-top:.9rem;font-size:.88rem;font-weight:600;
+  color:var(--madder);transition:transform .3s var(--ez)}
+.scard:hover .card-link{transform:translateX(4px)}
+
+/* ── course badge, level meta, practice trio ── */
+.course-meta{display:flex;flex-wrap:wrap;align-items:center;gap:1rem;margin-top:1.4rem}
+.course-badge{display:inline-flex;align-items:center;padding:.4rem 1rem;border-radius:999px;
+  background:var(--madder);color:var(--khadi);font-size:.78rem;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase}
+.course-levels{font-size:.92rem;color:var(--ink-faint)}
+.trio{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:1.8rem}
+.titem{flex:1 1 140px;text-align:center}
+.titem .ticon{width:56px;height:56px;margin:0 auto .8rem;border-radius:50%;display:grid;
+  place-items:center;box-shadow:inset 0 0 0 1.4px var(--madder);color:var(--madder)}
+.titem .ticon svg{width:56%;height:56%}
+.titem p{font-size:.86rem;color:var(--ink-soft);line-height:1.4;max-width:14ch;margin-inline:auto}
+
+/* ── course page template: uniqueness grid, curriculum, fee tables, stay features ── */
+.uniq-grid{display:flex;flex-wrap:wrap;gap:1.8rem;margin-top:2.2rem}
+.uniq-card{flex:1 1 260px;max-width:320px;background:var(--khadi);border-radius:8px;overflow:hidden;
+  box-shadow:0 2px 10px rgba(27,38,32,.09)}
+.uniq-card .slot{height:170px}
+.uniq-card .body{padding:1.3rem 1.4rem 1.6rem}
+.uniq-card h4{font-size:1.08rem;margin-bottom:.5rem}
+.uniq-card p{font-size:.92rem;color:var(--ink-soft)}
+
+.curriculum{margin-top:1.8rem}
+.curriculum .clevel{display:flex;gap:1.6rem;align-items:flex-start;padding:2rem 0;border-top:1px solid var(--rule)}
+.curriculum .clevel .slot{flex:0 0 220px;width:220px;height:220px;border-radius:8px}
+.curriculum .clevel .cbody{flex:1 1 auto}
+.curriculum .clevel h3{font-size:1.3rem;margin-bottom:.3rem}
+.curriculum .clevel .csub{font-style:italic;color:var(--ink-faint);font-size:.94rem;margin-bottom:1rem}
+.curriculum .clevel ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.3rem 1.6rem}
+.curriculum .clevel li{padding:.5rem 0;border-top:1px solid var(--rule);font-size:.95rem;color:var(--ink-soft)}
+.curriculum .clevel li b{color:var(--ink);font-weight:600}
+
+/* ── generic two-column feature list (reusable on any course page) ── */
+.list-grid{list-style:none;padding:0;margin-top:1.3rem;display:grid;grid-template-columns:1fr 1fr;gap:.3rem 1.6rem}
+.list-grid li{padding:.6rem 0;border-top:1px solid var(--rule);font-size:.95rem;color:var(--ink-soft)}
+.list-grid li:nth-last-child(-n+2){border-bottom:1px solid var(--rule)}
+.list-grid li b{color:var(--ink);font-weight:600}
+@media (max-width:760px){.list-grid{grid-template-columns:1fr}
+  .list-grid li:nth-last-child(-n+2){border-bottom:none}
+  .list-grid li:last-child{border-bottom:1px solid var(--rule)}
+  .curriculum .clevel{flex-direction:column}
+  .curriculum .clevel .slot{width:100%}
+  .curriculum .clevel ul{grid-template-columns:1fr}
+  .teacher-bio{flex-direction:column;text-align:center}
+  .teacher-bio .slot{margin-inline:auto}}
+
+.price-table{width:100%;border-collapse:collapse;margin-top:1.6rem;font-size:.96rem}
+.price-table th,.price-table td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--rule)}
+.price-table th{font-family:var(--disp);font-weight:400;color:var(--madder);font-size:1rem}
+.price-table td:not(:first-child),.price-table th:not(:first-child){text-align:right}
+.price-table tr:first-child th{border-bottom:2px solid var(--madder)}
+.price-table tbody tr:hover{background:var(--khadi-2)}
+.price-includes{margin-top:1.2rem;font-size:.92rem;color:var(--ink-soft);background:var(--khadi);
+  padding:1.1rem 1.3rem;border-radius:8px;border-left:3px solid var(--madder)}
+
+.stay-grid{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2rem}
+.stay-item{flex:1 1 220px;max-width:280px}
+.stay-item .slot{height:160px;border-radius:8px;margin-bottom:.9rem}
+.stay-item h4{font-size:1.02rem;margin-bottom:.4rem}
+.stay-item p{font-size:.9rem;color:var(--ink-soft)}
+
+.teacher-bio{display:flex;gap:2rem;align-items:center;flex-wrap:wrap;margin-top:1.8rem}
+.teacher-bio .slot{flex:0 0 180px;width:180px;height:180px;border-radius:50%}
+.teacher-bio .tbody{flex:1 1 320px}
+.teacher-bio h3{font-size:1.4rem;margin-bottom:.2rem}
+.teacher-bio .trole{color:var(--madder);font-weight:600;font-size:.92rem;margin-bottom:.9rem}
+
+.quote-grid{display:flex;flex-wrap:wrap;gap:1.8rem;margin-top:2.2rem}
+.qcard{flex:1 1 280px;max-width:360px;background:var(--khadi);border-radius:8px;padding:1.6rem;
+  box-shadow:0 2px 10px rgba(27,38,32,.09)}
+.qcard q{display:block;font-family:var(--disp);font-size:1.02rem;line-height:1.45;color:var(--ink);quotes:none}
+.qcard .qwho{margin-top:1.1rem;display:flex;align-items:center;gap:.7rem}
+.qcard .qwho .slot{width:42px;height:42px;flex:0 0 42px;border-radius:50%}
+.qcard .qwho b{font-size:.92rem;color:var(--ink)}
+.init-avatar{width:42px;height:42px;flex:0 0 42px;border-radius:50%;display:grid;place-items:center;
+  background:var(--madder);color:var(--khadi);font-family:var(--disp);font-size:1.05rem}
+
+/* ── course page shell: sticky sidebar (laptop) + top pill nav (mobile) ── */
+.course-shell{width:min(100% - 3.4rem,1280px);margin-inline:auto;display:flex;gap:3.6rem;align-items:flex-start}
+.course-sidebar{flex:0 0 220px;position:sticky;top:106px;display:flex;flex-direction:column;gap:.15rem;
+  max-height:calc(100vh - 136px);overflow-y:auto;padding-bottom:1rem}
+.course-sidebar .csb-label{font-family:var(--body);font-style:italic;color:var(--madder);
+  font-size:.86rem;font-weight:600;margin:0 0 .6rem .9rem}
+.course-sidebar a{padding:.6rem .9rem;border-radius:6px;font-size:.92rem;color:var(--ink-soft);
+  border-left:2px solid transparent;transition:background .3s var(--ez),color .3s var(--ez)}
+.course-sidebar a:hover{background:var(--khadi-2);color:var(--ink)}
+.course-sidebar a.active{color:var(--madder);border-left-color:var(--madder);background:var(--khadi-2);font-weight:600}
+.course-content{flex:1 1 auto;min-width:0;max-width:900px;padding:3.4rem 0 1rem}
+.course-content>section{padding:3rem 0;border-bottom:1px solid var(--rule);scroll-margin-top:120px}
+.course-content>section:first-child{padding-top:0}
+.course-content>section:last-child{border-bottom:none}
+.course-mobile-nav{display:none}
+@media (max-width:960px){
+  .course-shell{display:block}
+  .course-sidebar{display:none}
+  .course-mobile-nav{display:block}
+  .course-content{max-width:none;padding-top:0}
+}
 
 /* ── teachers ── */
 .tg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2.3rem 1.9rem}
